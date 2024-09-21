@@ -26,7 +26,7 @@ const HomeNewsLetter: FC = () => {
               Thank You for Subscribing!
             </Typography>
             <Typography sx={{ mb: 6 }}>
-              You've successfully subscribed to our newsletter. Check your email for updates.
+              You are successfully subscribed to our newsletter. Check your email for updates.
             </Typography>
           </Box>
         </Container>
