@@ -4,10 +4,10 @@ import InputBase from '@mui/material/InputBase'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { StyledButton } from '../styled-button'
-import { useForm, ValidationError } from '@formspree/react' // Import Formspree hooks
+import { useForm, ValidationError } from '@formspree/react'
 
 const HomeNewsLetter: FC = () => {
-  const [state, handleSubmit] = useForm('xrbzwkvk') // Replace with your form ID
+  const [state, handleSubmit] = useForm('xrbzwkvk')
 
   if (state.succeeded) {
     return (
@@ -82,7 +82,7 @@ const HomeNewsLetter: FC = () => {
             <ValidationError prefix="Email" field="email" errors={state.errors} />
 
             <Box>
-              <StyledButton type="submit" disableHoverEffect size="large" disabled={state.submitting}>
+              <StyledButton type="submit" disableHoverEffect size="large">
                 Subscribe
               </StyledButton>
             </Box>
