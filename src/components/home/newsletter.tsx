@@ -4,12 +4,42 @@ import InputBase from '@mui/material/InputBase'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import { StyledButton } from '../styled-button'
+import { useForm, ValidationError } from '@formspree/react' // Import Formspree hooks
 
 const HomeNewsLetter: FC = () => {
+  const [state, handleSubmit] = useForm('xrbzwkvk') // Replace with your form ID
+
+  if (state.succeeded) {
+    return (
+      <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
+        <Container>
+          <Box
+            sx={{
+              backgroundColor: 'secondary.main',
+              borderRadius: 10,
+              py: { xs: 4, md: 10 },
+              px: { xs: 4, md: 8 },
+              textAlign: 'center',
+            }}
+          >
+            <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
+              Thank You for Subscribing!
+            </Typography>
+            <Typography sx={{ mb: 6 }}>
+              You've successfully subscribed to our newsletter. Check your email for updates.
+            </Typography>
+          </Box>
+        </Container>
+      </Box>
+    )
+  }
+
   return (
     <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
       <Container>
         <Box
+          component="form"
+          onSubmit={handleSubmit}
           sx={{
             backgroundColor: 'secondary.main',
             borderRadius: 10,
@@ -34,6 +64,10 @@ const HomeNewsLetter: FC = () => {
             }}
           >
             <InputBase
+              id="email"
+              name="email"
+              type="email"
+              required
               sx={{
                 backgroundColor: 'background.paper',
                 borderRadius: 3,
@@ -45,8 +79,10 @@ const HomeNewsLetter: FC = () => {
               }}
               placeholder="Enter your Email Address"
             />
+            <ValidationError prefix="Email" field="email" errors={state.errors} />
+
             <Box>
-              <StyledButton disableHoverEffect size="large">
+              <StyledButton type="submit" disableHoverEffect size="large" disabled={state.submitting}>
                 Subscribe
               </StyledButton>
             </Box>
