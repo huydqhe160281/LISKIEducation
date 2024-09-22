@@ -49,20 +49,37 @@ const HomeNewsLetter: FC = () => {
           }}
         >
           <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
-            Subscribe to Our News Letter
+            Đăng ký để nhận thông tin từ chúng tôi
           </Typography>
-          <Typography sx={{ mb: 6 }}>Subscribe to our newsletter to get information about our courses.</Typography>
+          <Typography sx={{ mb: 6 }}>Đăng ký để nhận hỗ trọ về cách thức đăng ký và tư vấn về khóa học</Typography>
 
           <Box
             sx={{
               display: 'flex',
               alignItems: 'center',
-              flexDirection: { xs: 'column', md: 'row' },
+              flexDirection: 'column',
               justifyContent: 'space-around',
               width: { xs: '100%', md: 560 },
               mx: 'auto',
             }}
           >
+            <InputBase
+              id="name"
+              name="name"
+              type="text"
+              required
+              sx={{
+                backgroundColor: 'background.paper',
+                borderRadius: 3,
+                width: '100%',
+                height: 48,
+                px: 2,
+                mb: 2,
+              }}
+              placeholder="Nhập tên của bạn"
+            />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+
             <InputBase
               id="email"
               name="email"
@@ -74,16 +91,32 @@ const HomeNewsLetter: FC = () => {
                 width: '100%',
                 height: 48,
                 px: 2,
-                mr: { xs: 0, md: 3 },
-                mb: { xs: 2, md: 0 },
+                mb: 2,
               }}
-              placeholder="Enter your Email Address"
+              placeholder="Nhập Email của bạn"
             />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
 
+            <InputBase
+              id="phone"
+              name="phone"
+              type="tel"
+              required
+              sx={{
+                backgroundColor: 'background.paper',
+                borderRadius: 3,
+                width: '100%',
+                height: 48,
+                px: 2,
+                mb: 2,
+              }}
+              placeholder="Nhập số điện thoại của bạn"
+            />
+            <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+
             <Box>
               <StyledButton type="submit" disableHoverEffect size="large">
-                Subscribe
+                Đăng Ký Ngay
               </StyledButton>
             </Box>
           </Box>

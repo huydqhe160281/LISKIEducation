@@ -10,9 +10,7 @@ import 'slick-carousel/slick/slick.css'
 import '@/styles/globals.css'
 import '@/styles/react-slick.css'
 import { NextPageWithLayout } from '@/interfaces/layout'
-// import 'slick-carousel/slick/slick-theme.css'
 
-// Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
 
 type AppPropsWithLayout = AppProps & {
@@ -23,6 +21,10 @@ type AppPropsWithLayout = AppProps & {
 const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
+  const defaultTitle = 'LISKI Education | Quality Courses for Your Future'
+  const defaultDescription =
+    'LISKI Education offers top-quality courses that help you excel in your educational journey. Join us for expert advice and support on how to register for courses.'
+
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page)
 
@@ -30,10 +32,17 @@ const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <title>LISKI Education</title>
+        <title>{defaultTitle}</title>
+        <meta name="description" content={defaultDescription} />
+        <meta property="og:title" content={defaultTitle} />
+        <meta property="og:description" content={defaultDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://liskieducation.vercel.app" />
+        <meta property="og:image" content="https://liskieducation.com/images/og-image.jpg" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="LISKI Education" />
       </Head>
       <MUIProvider>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         {getLayout(<Component {...pageProps} />)}
       </MUIProvider>

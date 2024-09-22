@@ -4,7 +4,7 @@ export const data: Array<Course> = [
   {
     id: 1,
     cover: '/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg',
-    title: 'Android Development from Zeo to Hero',
+    title: 'Kỹ Năng Quản Lý Tài Chính Cá Nhân',
     rating: 5,
     ratingCount: 8,
     price: 25,
@@ -13,7 +13,7 @@ export const data: Array<Course> = [
   {
     id: 2,
     cover: '/images/courses/alvaro-reyes-qWwpHwip31M-unsplash.jpg',
-    title: 'UI/UX Complete Guide',
+    title: 'Kỹ Năng Sinh Tồn Và An Toàn',
     rating: 5,
     ratingCount: 15,
     price: 20,
@@ -22,7 +22,7 @@ export const data: Array<Course> = [
   {
     id: 3,
     cover: '/images/courses/christopher-gower-m_HRfLhgABo-unsplash.jpg',
-    title: 'Mastering Data Modeling Fundamentals',
+    title: 'Tư Duy Phản Biện',
     rating: 4,
     ratingCount: 7,
     price: 30,
