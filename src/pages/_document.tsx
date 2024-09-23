@@ -6,13 +6,17 @@ class MyDocument extends Document {
   render(): any {
     return (
       <Html lang="en">
-        <Head>
+         <Head>
           <meta charSet="utf-8" />
           <meta property="og:url" content="https://liskieducation.vercel.app" />
           <meta property="og:image" content="/images/logo.jpg" />
           <meta name="robots" content="index, follow" />
           <meta name="author" content="LISKI Education" />
-
+          <title>{defaultTitle}</title>
+        <meta name="description" content={'LISKI Education offers top-quality courses that help you excel in your educational journey. Join us for expert advice and support on how to register for courses.'} />
+        <meta property="og:title" content={'LISKI Education | Quality Courses for Your Future'} />
+        <meta property="og:description" content={'LISKI Education offers top-quality courses that help you excel in your educational journey. Join us for expert advice and support on how to register for courses.'} />
+        <meta property="og:type" content="website" />
         {/* Tham chiếu tới favicon trong thư mục public */}
         <link rel="icon" href="/images/favicon.png" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
