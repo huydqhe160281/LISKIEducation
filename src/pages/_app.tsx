@@ -18,6 +18,8 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
+const BASE_URL = 'https://liskieducation.vercel.app'
+
 const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
@@ -25,7 +27,6 @@ const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
   const defaultDescription =
     'LISKI Education offers top-quality courses that help you excel in your educational journey. Join us for expert advice and support on how to register for courses.'
 
-  // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page)
 
   return (
@@ -37,15 +38,13 @@ const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
         <meta property="og:title" content={defaultTitle} />
         <meta property="og:description" content={defaultDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://liskieducation.vercel.app" />
-        <meta property="og:image" content="https://liskieducation.vercel.app/images/logo.png" />
+        <meta property="og:url" content={`${BASE_URL}`} />
+        <meta property="og:image" content={`${BASE_URL}/images/logo.jpg`} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="LISKI Education" />
 
         {/* Tham chiếu tới favicon trong thư mục public */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" href={`${BASE_URL}/images/favicon.png`} />
       </Head>
 
       <MUIProvider>
