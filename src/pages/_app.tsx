@@ -38,10 +38,16 @@ const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
         <meta property="og:description" content={defaultDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://liskieducation.vercel.app" />
-        <meta property="og:image" content="https://liskieducation.com/images/og-image.jpg" />
+        <meta property="og:image" content="https://liskieducation.vercel.app/images/logo.png" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="LISKI Education" />
+
+        {/* Tham chiếu tới favicon trong thư mục public */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
+
       <MUIProvider>
         <CssBaseline />
         {getLayout(<Component {...pageProps} />)}
