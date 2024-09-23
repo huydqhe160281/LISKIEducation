@@ -4,7 +4,7 @@ import { StyledButton } from '@/components/styled-button'
 
 const AuthNavigation: FC = () => {
   return (
-    <Box sx={{ '& button:first-child': { mr: 2 } }}>
+    <Box sx={{ '& button:first-of-type': { mr: 2 } }}>
       <StyledButton
         onClick={() => {
           window.open('https://www.facebook.com/LISKI.education', '_blank')
