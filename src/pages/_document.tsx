@@ -1,6 +1,5 @@
-import React from 'react'
 import theme from '@/config/theme'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   render(): any {
@@ -12,7 +11,7 @@ class MyDocument extends Document {
           <meta property="og:image" content="/images/logo.jpg" />
           <meta name="robots" content="index, follow" />
           <meta name="author" content="LISKI Education" />
-          <title>{defaultTitle}</title>
+          <title>{'LISKI Education | Quality Courses for Your Future'}</title>
         <meta name="description" content={'LISKI Education offers top-quality courses that help you excel in your educational journey. Join us for expert advice and support on how to register for courses.'} />
         <meta property="og:title" content={'LISKI Education | Quality Courses for Your Future'} />
         <meta property="og:description" content={'LISKI Education offers top-quality courses that help you excel in your educational journey. Join us for expert advice and support on how to register for courses.'} />
