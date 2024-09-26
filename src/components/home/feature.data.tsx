@@ -12,23 +12,23 @@ interface Data {
 
 export const data: Data[] = [
   {
-    title: 'Easy Accessable',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Sự tận tâm',
+    description: ' Liên tục cải tiến và đổi mới, chất lượng, đảm bảo chất lượng giáo dục tốt nhất.',
     icon: <ArtTrackIcon />,
   },
   {
-    title: 'More Affordable Cost',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Chất lượng',
+    description: 'Liên tục cải tiến và đổi mới, chất lượng, đảm bảo chất lượng giáo dục tốt nhất.',
     icon: <AttachMoneyIcon />,
   },
   {
-    title: 'Flexible Study Time',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Độ tin cậy',
+    description: 'Đảm bảo độ tin cậy trong mọi khía cạnh của trung tâm.',
     icon: <LocalLibraryIcon />,
   },
   {
-    title: 'Consultation With Mentor',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Lấy khách hàng làm trung tâm',
+    description: 'Lấy sự hài lòng và nhu cầu của khách hàng là kim chỉ nam.',
     icon: <ContactSupportIcon />,
   },
 ]

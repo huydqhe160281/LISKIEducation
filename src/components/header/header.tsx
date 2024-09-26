@@ -17,7 +17,10 @@ const Header: FC = () => {
     <Box sx={{ backgroundColor: 'background.paper' }}>
       <Container sx={{ py: { xs: 2, md: 3 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Logo />
+          <Logo onClick={
+            // rediarect to https://www.facebook.com/LISKI.Educationn
+            () => window.open('https://www.facebook.com/LISKI.Educationn', '_blank')
+          }/>
           <Box sx={{ ml: 'auto', display: { xs: 'inline-flex', md: 'none' } }}>
             <IconButton onClick={() => setVisibleMenu(!visibleMenu)}>
               <Menu />

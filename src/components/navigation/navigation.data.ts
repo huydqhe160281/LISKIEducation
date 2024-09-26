@@ -17,4 +17,8 @@ export const navigations: Navigation[] = [
     label: 'Giảng viên',
     path: 'mentors', // '/mentors',
   },
+  {
+    label: 'Về chúng tôi',
+    path: 'about', // '/about me',
+  },
 ]

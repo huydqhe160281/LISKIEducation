@@ -26,7 +26,7 @@ const Footer: FC = () => {
                 </a>
               </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-                LISKI Education is an online learning platform that has been operating since 2018 until now.
+                LISKI Education là trung tâm giáo dục đẳng cấp, chuyên cung cấp khóa học kỹ năng sống cho trẻ em, với sứ mệnh khai phóng tiềm năng và bồi đắp nhân cách cho thế hệ tương lai.
               </Typography>
               <FooterSocialLinks />
             </Box>

@@ -14,7 +14,9 @@ const Logo: FC<Props> = ({ onClick, variant }) => {
         component="h1"
         sx={{ fontWeight: 700, '& span': { color: variant === 'primary' ? 'primary.main' : 'unset' } }}
       >
-        LISKI<span>Education</span>
+        LISKI<span 
+        style={{ marginLeft: '2px' }}
+        >Education</span>
       </Typography>
     </Box>
   )

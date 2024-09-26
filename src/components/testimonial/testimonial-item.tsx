@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { Testimonial } from '@/interfaces/testimonial'
+import { Rating } from '@mui/material'
 
 interface Props {
   item: Testimonial
@@ -13,7 +14,7 @@ const TestimonialItem: FC<Props> = ({ item }) => {
     <Box sx={{ padding: '30px' }}>
       <Box sx={{ mb: 2 }}>
         <Typography component="h2" variant="h4" sx={{ mb: 2 }}>
-          {item.title}
+        <Rating name="rating-course" value={item.rating} max={5} sx={{ color: '#ffce31', mr: 1 }} readOnly />
         </Typography>
         <Typography sx={{ mb: 2, color: 'text.secondary' }}>{item.content}</Typography>
       </Box>
@@ -26,7 +27,7 @@ const TestimonialItem: FC<Props> = ({ item }) => {
           overflow: 'hidden',
           display: 'flex',
           alignItems: 'center',
-          width: 270,
+          width: 300,
           backgroundColor: 'background.paper',
         }}
       >

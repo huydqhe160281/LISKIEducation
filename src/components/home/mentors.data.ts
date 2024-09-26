@@ -4,10 +4,10 @@ export const data: Array<Mentor> = [
   {
     id: 1,
     photo: '/images/mentors/christian-buehner-DItYlc26zVI-unsplash.jpg',
-    name: 'Jhon Dwirian',
-    category: 'UI/UX Design',
+    name: 'Nguyễn Thế Ninh',
+    category: 'Chuyên viên về hoạt động ngoài trời, sinh tồn',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Đã tham gia nhiều khóa huấn luyện về an toàn trong các môi trường tự nhiên khác nhau, có kiến thức trải nghiệm, kinh nghiệm thực tế',
     company: {
       name: 'Grab',
       logo: '/images/companies/grab.png',
@@ -16,10 +16,10 @@ export const data: Array<Mentor> = [
   {
     id: 2,
     photo: '/images/mentors/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg',
-    name: 'Leon S Kennedy',
-    category: 'Machine Learning',
+    name: 'Nguyễn Đức Thành',
+    category: 'Có kinh nghiệm về việc tổ chức sự kiện',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Từng phụ trách nhiều dự án cá nhân và nhóm với hiệu quả cao, một trong những thành viên tiêu biểu góp phần đóng góp cho nhiều dự án lớn ở trong nước.',
     company: {
       name: 'Google',
       logo: '/images/companies/google.png',
@@ -28,10 +28,10 @@ export const data: Array<Mentor> = [
   {
     id: 3,
     photo: '/images/mentors/noah-buscher-8A7fD6Y5VF8-unsplash.jpg',
-    name: 'Nguyễn Thuy',
-    category: 'Android Development',
+    name: 'Vũ Cẩm Tú',
+    category: 'Có kiến thức chuyên sâu về tư duy phản biện',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Thường xuyên tham gia, tổ chức các buổi thảo luận, hoạt động nhóm về tư duy logic, giải quyết vấn đề, từng là trợ lý cho các giáo sư nghiên cứu về các đề tài về tâm lý.',
     company: {
       name: 'Airbnb',
       logo: '/images/companies/airbnb.png',
@@ -40,10 +40,22 @@ export const data: Array<Mentor> = [
   {
     id: 4,
     photo: '/images/mentors/philip-martin-5aGUyCW_PJw-unsplash.jpg',
-    name: 'Rizki Known',
-    category: 'Fullstack Development',
+    name: 'Nguyễn Thị Phương Thanh',
+    category: 'Có kiến thức về quản lý tài chính cá nhân',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Từng tham gia tư vấn cho nhiều dự án cộng đồng và chia sẻ kỹ năng tài chính, có kinh nghiệm, kiến thức diễn thuyết về các khóa học tài chính nhiều nơi trên thế giới',
+    company: {
+      name: 'Microsoft',
+      logo: '/images/companies/microsoft.png',
+    },
+  },
+  {
+    id: 4,
+    photo: '/images/mentors/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg',
+    name: 'Trần Tuệ Minh',
+    category: 'Tích cực trong các hoạt động xã hội',
+    description:
+      'Đã làm việc với các tổ chức liên quan đến trẻ em, chuyên phòng chống bạo lực học đường và xây dựng môi trường an toàn.',
     company: {
       name: 'Microsoft',
       logo: '/images/companies/microsoft.png',

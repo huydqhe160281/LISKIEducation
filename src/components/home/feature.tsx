@@ -40,7 +40,7 @@ const BorderLinearProgress = styled(LinearProgress, {
 const HomeFeature: FC = () => {
   return (
     <Box
-      id="feature"
+      id="about"
       sx={{ py: { xs: 10, md: 14 }, backgroundColor: "background.paper" }}
     >
       <Container>
@@ -187,7 +187,7 @@ const HomeFeature: FC = () => {
                 fontWeight: "bold",
               }}
             >
-              Make your{" "}
+              Về{" "}
               <Typography
                 component="mark"
                 sx={{
@@ -198,7 +198,7 @@ const HomeFeature: FC = () => {
                   backgroundColor: "unset",
                 }}
               >
-                Learning <br />
+                Chúng tôi <br />
                 <Box
                   sx={{
                     position: "absolute",
@@ -212,15 +212,17 @@ const HomeFeature: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              Enjoyable
             </Typography>
 
             <Typography
               sx={{ color: "text.secondary", mb: 2, ml: { xs: 0, md: 4 } }}
             >
-              Set the way of learning according to your wishes with some of the
-              benefits that you get us, so you on enjoy the lessons that we
-              provide.
+              LISKI Education là một trung tâm giáo dục đẳng cấp, chuyên cung
+              cấp các khóa học kỹ năng sống cho trẻ em, với sứ mệnh khai phóng
+              tiềm năng và bồi đắp nhân cách cho thế hệ tương lai. Chúng tôi tin
+              rằng, mỗi đứa trẻ đều là một ngôi sao sáng, và nhiệm vụ của chúng
+              tôi là thắp sáng ánh sáng ấy, dẫn dắt các em vươn xa trên con
+              đường học vấn và cuộc sống
             </Typography>
 
             <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>

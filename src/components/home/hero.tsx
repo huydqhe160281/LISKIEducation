@@ -138,7 +138,7 @@ const HomeHero: FC = () => {
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    'Hãy tham gia một khóa học trực tuyến để nâng cao kỹ năng của bạn theo một cách khác biệt, bạn có thể tự sắp xếp thời gian học theo tốc độ tiếp thu của mình. Nhờ đó, bạn sẽ học thoải mái hơn và dễ dàng nắm bắt kiến thức.'
+                    'Slogan nhấn mạnh việc trang bị kỹ năng cốt lõi cho trẻ, giúp chúng tự tin đối mặt thách thức và xây dựng tương lai thành công. Slogan này thể hiện cam kết của LISKI trong việc phát triển kỹ năng sống bền vững cho thế hệ trẻ.'
                   }
                 </Typography>
               </Box>
@@ -150,7 +150,7 @@ const HomeHero: FC = () => {
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />}>
-                    Watch Video
+                   Xem Video
                   </StyledButton>
                 </ScrollLink>
               </Box>
