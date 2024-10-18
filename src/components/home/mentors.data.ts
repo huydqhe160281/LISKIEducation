@@ -31,7 +31,7 @@ export const data: Array<Mentor> = [
     name: 'Vũ Cẩm Tú',
     category: 'Có kiến thức chuyên sâu về tư duy phản biện',
     description:
-      'Thường xuyên tham gia, tổ chức các buổi thảo luận, hoạt động nhóm về tư duy logic, giải quyết vấn đề, từng là trợ lý cho các giáo sư nghiên cứu về các đề tài về tâm lý.',
+      'Thường xuyên tham gia, tổ chức các buổi thảo luận, hoạt động nhóm về tư duy, từng là trợ lý cho các giáo sư nghiên cứu về các đề tài về tâm lý.',
     company: {
       name: 'Airbnb',
       logo: '/images/companies/airbnb.png',

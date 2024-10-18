@@ -7,7 +7,7 @@ const AuthNavigation: FC = () => {
     <Box sx={{ '& button:first-of-type': { mr: 2 } }}>
       <StyledButton
         onClick={() => {
-          window.open('https://www.facebook.com/LISKI.education', '_blank')
+          window.open('https://www.facebook.com/messages/t/399584879912710', '_blank')
         }}
         color="primary"
         size="medium"
