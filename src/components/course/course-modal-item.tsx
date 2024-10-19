@@ -9,6 +9,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import Button from "@mui/material/Button";
 import { Course } from "@/interfaces/course";
+import { useRouter } from "next/router";
 
 interface Props {
   open: boolean;
@@ -17,10 +18,10 @@ interface Props {
 }
 
 const CourseModalItem: FC<Props> = ({ open, handleClose, item }) => {
-  const descriptionLines = item.description
-    .split("\n")
-    .filter((line) => line.trim() !== "");
-
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push(`/detail/${item.id}`);
+  };
   return (
     <Dialog
       open={open}
@@ -80,20 +81,13 @@ const CourseModalItem: FC<Props> = ({ open, handleClose, item }) => {
             />
           </Box>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 1, flex: 1 }}>
-            <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold", mb: 2 }}>
-              {item.titleDesc}
+            <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold", mb: 2}} >
+              {item.subTitle}
             </Typography>
-            <ul style={{ paddingLeft: "20px", margin: 0 }}>
-              {descriptionLines.map((line, index) => (
-                <li key={index}>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: line.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
-                    }}
-                  />
-                </li>
-              ))}
-            </ul>
+            <Typography variant="h5" gutterBottom sx={{ mb: 2 }}>
+              {item.subDesc}
+            </Typography>
+           
             <Typography variant="body1" gutterBottom>
               <span style={{ fontWeight: "bold", color: "primary.main" }}>Giá: </span>
               <Typography
@@ -149,6 +143,21 @@ const CourseModalItem: FC<Props> = ({ open, handleClose, item }) => {
           }}
         >
           Liên hệ ngay
+        </Button>
+        {/* xem chi tiết */}
+        <Button
+          variant="contained"
+          onClick={handleNavigate}   
+          
+          color="primary"
+          sx={{
+            fontWeight: "bold",
+            textTransform: "none",
+            px: 4,
+            py: 1,
+          }}
+        >
+          Xem chi tiết
         </Button>
       </DialogActions>
     </Dialog>

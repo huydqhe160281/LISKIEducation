@@ -1,7 +1,8 @@
 export interface Course {
   id: number | string
   title: string
-  titleDesc: string
+  subTitle: string
+  subDesc: string
   description: string
   cover: string
   rating: number

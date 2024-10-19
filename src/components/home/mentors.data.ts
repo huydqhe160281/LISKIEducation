@@ -3,7 +3,7 @@ import type { Mentor } from '@/interfaces/mentor'
 export const data: Array<Mentor> = [
   {
     id: 1,
-    photo: '/images/mentors/christian-buehner-DItYlc26zVI-unsplash.jpg',
+    photo: '/images/mentors/Ninh.png',
     name: 'Nguyễn Thế Ninh',
     category: 'Chuyên viên về hoạt động ngoài trời, sinh tồn',
     description:
@@ -15,7 +15,7 @@ export const data: Array<Mentor> = [
   },
   {
     id: 2,
-    photo: '/images/mentors/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg',
+    photo: '/images/mentors/thanh.png',
     name: 'Nguyễn Đức Thành',
     category: 'Có kinh nghiệm về việc tổ chức sự kiện',
     description:
@@ -27,7 +27,7 @@ export const data: Array<Mentor> = [
   },
   {
     id: 3,
-    photo: '/images/mentors/noah-buscher-8A7fD6Y5VF8-unsplash.jpg',
+    photo: '/images/mentors/nyHuy.png',
     name: 'Vũ Cẩm Tú',
     category: 'Có kiến thức chuyên sâu về tư duy phản biện',
     description:
@@ -39,7 +39,7 @@ export const data: Array<Mentor> = [
   },
   {
     id: 4,
-    photo: '/images/mentors/philip-martin-5aGUyCW_PJw-unsplash.jpg',
+    photo: '/images/mentors/Pthanh.png',
     name: 'Nguyễn Thị Phương Thanh',
     category: 'Có kiến thức về quản lý tài chính cá nhân',
     description:
@@ -51,7 +51,7 @@ export const data: Array<Mentor> = [
   },
   {
     id: 4,
-    photo: '/images/mentors/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg',
+    photo: '/images/mentors/Minh.png',
     name: 'Trần Tuệ Minh',
     category: 'Tích cực trong các hoạt động xã hội',
     description:

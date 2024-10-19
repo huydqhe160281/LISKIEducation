@@ -4,8 +4,10 @@ export const data: Array<Course> = [
   {
     id: 1,
     cover: "/images/courses/1.png",
-    title: "Kỹ Năng Quản Lý Tài Chính Cá Nhân",
-    titleDesc: "Khám phá tài chính bé thông minh, tương lai rực rỡ!",
+    title: "Khóa học kỹ năng quản lý tài chính",
+    subTitle: "Khám phá tài chính bé thông minh, tương lai rực rỡ!",
+    subDesc:
+      "Khóa học Quản lý Tài chính Cá nhân cho trẻ em được thiết kế để giúp các bé xây dựng nền tảng vững chắc về tài chính thông qua các kiến thức và kỹ năng cơ bản",
     description: `
 **Hiểu về tiền**: Trẻ sẽ học khái niệm về tiền, vai trò của nó và cách kiếm thu nhập, giúp bé hiểu rõ giá trị và cách sử dụng tiền hợp lý.
 **Tiết kiệm**: Hướng dẫn trẻ cách tiết kiệm từ những khoản nhỏ, như tiền thưởng hay quà tặng, qua các hoạt động thực tế.
@@ -22,7 +24,9 @@ export const data: Array<Course> = [
     id: 2,
     cover: "/images/courses/2.png",
     title: "Kỹ Năng Sinh Tồn Và An Toàn",
-    titleDesc: "Khóa Học Sinh Tồn – Khám Phá Giới Hạn Của Trẻ!",
+    subTitle: "Khóa Học Sinh Tồn – Khám Phá Giới Hạn Của Trẻ!",
+    subDesc:
+      "Khóa học Kỹ năng Sinh Tồn và An Toàn là một chương trình đặc biệt được thiết kế để trang bị cho trẻ những kỹ năng cần thiết để đối phó với các tình huống khẩn cấp và khó khăn trong môi trường tự nhiên hoặc đô thị.",
     description: `
 **Kỹ năng sinh tồn khi bị đuối nước**: Trẻ sẽ học cách phản ứng nhanh và hiệu quả khi rơi vào tình huống nguy hiểm dưới nước.
 **Kỹ năng phòng cháy chữa cháy**: Giới thiệu các biện pháp an toàn và cách sử dụng bình cứu hỏa để thoát hiểm.
@@ -32,17 +36,24 @@ export const data: Array<Course> = [
   `,
     rating: 5,
     ratingCount: 15,
-    price: "2.000.000",
+    price: "2.500.000",
     category: "Intermediate",
   },
   {
     id: 3,
     cover: "/images/courses/3.png",
-    title: "Kỹ Năng Tư Duy Phản Biện",
-    titleDesc:
-      "Khóa học Tư duy Phản biện được thiết kế để giúp các bé phát triển khả năng suy nghĩ độc lập và phản biện thông qua việc trang bị kiến thức và kỹ năng cơ bản:",
-    description:
+    title: "Khóa học kỹ năng tư duy phản biện",
+    subTitle:
+      "Phát triển tư duy phản biện Mở rộng tầm nhìn, nâng cao quyết định!",
+    subDesc:
       "Khóa học Tư duy Phản biện được thiết kế để giúp các bé phát triển khả năng suy nghĩ độc lập và phản biện thông qua việc trang bị kiến thức và kỹ năng cơ bản",
+    description: `
+**Kỹ năng ra quyết định tốt hơn**: Trẻ sẽ học cách phân tích tình huống và đưa ra quyết định dựa trên lý lẽ và bằng chứng, thay vì chỉ dựa vào cảm xúc.
+**Khả năng giải quyết vấn đề**: Học cách tiếp cận và giải quyết vấn đề một cách hiệu quả, từ đó tăng cường khả năng ứng phó với các tình huống khó khăn trong cuộc sống.
+**Tư duy độc lập**: Trẻ sẽ phát triển khả năng tư duy độc lập, không dễ dàng bị ảnh hưởng bởi ý kiến của người khác.
+**Tự tin trong giao tiếp**: Giúp trẻ tự tin hơn trong việc diễn đạt ý kiến của mình, tham gia vào các cuộc thảo luận và tranh luận.
+**Khả năng sáng tạo**: Khuyến khích trẻ phát triển tư duy sáng tạo, tìm ra những giải pháp mới và độc đáo cho các vấn đề.
+    `,
     rating: 4,
     ratingCount: 7,
     price: "2.000.000",
@@ -52,14 +63,14 @@ export const data: Array<Course> = [
     id: 4,
     cover: "/images/courses/4.png",
     title: "Kỹ Năng Quản Lý Thời Gian",
-    titleDesc:
-      "Phát triển tư duy phản biện mở rộng tầm nhìn, nâng cao quyết định!",
+    subTitle:
+      "Quản lý thời gian hiệu quả, Chinh phục mọi mục tiêu!",
+    subDesc: "Khóa học Kỹ Năng Quản Lý Thời Gian Dành Cho Trẻ Em được thiết kế nhằm trang bị cho trẻ những công cụ và phương pháp cần thiết để sử dụng thời gian một cách hiệu quả",
     description: `
-**Kỹ năng ra quyết định tốt hơn**: Trẻ sẽ học cách phân tích tình huống và đưa ra quyết định dựa trên lý lẽ và bằng chứng, thay vì chỉ dựa vào cảm xúc.
-**Khả năng giải quyết vấn đề**: Học cách tiếp cận và giải quyết vấn đề một cách hiệu quả, từ đó tăng cường khả năng ứng phó với các tình huống khó khăn trong cuộc sống.
-**Tư duy độc lập**: Trẻ sẽ phát triển khả năng tư duy độc lập, không dễ dàng bị ảnh hưởng bởi ý kiến của người khác.
-**Tự tin trong giao tiếp**: Giúp trẻ tự tin hơn trong việc diễn đạt ý kiến của mình, tham gia vào các cuộc thảo luận và tranh luận.
-**Khả năng sáng tạo**: Khuyến khích trẻ phát triển tư duy sáng tạo, tìm ra những giải pháp mới và độc đáo cho các vấn đề.
+**Quản Lý Thời Gian**: Giúp trẻ hiểu giá trị của thời gian và tầm quan trọng của việc quản lý thời gian hàng ngày với các phương pháp đơn giản nhưng hiệu quả.
+**Lập Kế Hoạch và Sắp Xếp Ưu Tiên**: Trẻ học cách xác định mục tiêu và lập kế hoạch cho từng ngày, tuần và tháng.
+**Tổ Chức Công Việc**: Hướng dẫn trẻ cách tạo môi trường học tập gọn gàng, sắp xếp đồ dùng và tài liệu theo trình tự hợp lý.
+**Tạo Động Lực và Duy Trì Thói Quen Tốt**: Giúp trẻ tự động viên bản thân và hình thành thói quen tốt trong học tập và vui chơi.
       `,
     rating: 4,
     ratingCount: 12,
@@ -69,11 +80,16 @@ export const data: Array<Course> = [
   {
     id: 5,
     cover: "/images/courses/5.png",
-    title: "Kỹ Năng Phòng Chống Bạo Lực Học Đường",
-    titleDesc:
-      "Khóa học Kỹ năng Sinh Tồn và An Toàn là một chương trình đặc biệt được thiết kế để trang bị cho trẻ những kỹ năng cần thiết để đối phó với các tình huống khẩn cấp và khó khăn trong môi trường tự nhiên hoặc đô thị.",
-    description:
-      "Khóa học Kỹ năng Sinh Tồn và An Toàn là một chương trình đặc biệt được thiết kế để trang bị cho trẻ những kỹ năng cần thiết để đối phó với các tình huống khẩn cấp và khó khăn trong môi trường tự nhiên hoặc đô thị.",
+    title: "Khóa học kỹ năng Phòng/chống bạo lực học đường",
+    subTitle: "Ngăn chặn bạo lực, bảo vệ tương lai!",
+    subDesc:
+      "Khóa học kỹ năng chống bạo lực học đường được thiết kế để trang bị cho các em kiến thức và kỹ năng đối phó với bạo lực học đường",
+    description: `
+**Kỹ năng nhận biết dấu hiệu của bạo lực học đường**: Trẻ sẽ học cách nhận diện các dấu hiệu quấy rối, xâm hại về thể chất và tinh thần, cũng như nhận diện kẻ gây hại.
+**Dấu hiệu của bạo lực học đường**: Khóa học chỉ ra các dấu hiệu cụ thể như sự thay đổi trong hành vi, cảm xúc hoặc việc sợ hãi đến trường.
+**Kiểm soát cảm xúc và ứng phó với hệ lụy**: Trẻ học cách kiểm soát cảm xúc tiêu cực như sợ hãi, lo lắng và tức giận trong các tình huống căng thẳng.
+**Xử lý tình huống**: Trang bị cho trẻ kỹ năng tự bảo vệ mình, tìm sự giúp đỡ từ người lớn, và hỗ trợ bạn bè khi gặp vấn đề liên quan đến bạo lực.
+    `,
     rating: 4,
     ratingCount: 32,
     price: "2.000.000",
