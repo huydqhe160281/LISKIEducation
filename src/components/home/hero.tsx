@@ -149,8 +149,11 @@ const HomeHero: FC = () => {
                   </StyledButton>
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />}>
-                   Xem Video
+                  <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />} 
+                  // navigate to fanpage facebook
+                  onClick={() => window.open('https://www.facebook.com/LISKI.Educationn')}
+                  >
+                   Đi tới fanpage
                   </StyledButton>
                 </ScrollLink>
               </Box>
@@ -202,13 +205,13 @@ const HomeHero: FC = () => {
               </Box>
             </Box>
             <Box sx={{ lineHeight: 0 }}>
-              <Image src="/images/home-hero.jpg" width={775} height={787} alt="Hero img" />
+              <Image src="/images/home-hero.jpg" width={1200} height={1200} alt="Hero img" />
             </Box>
           </Grid>
         </Grid>
 
         {/* Experience */}
-        <Box sx={{ boxShadow: 2, py: 4, px: 7, borderRadius: 4 }}>
+        {/* <Box sx={{ boxShadow: 2, py: 4, px: 7, borderRadius: 4 }}>
           <Grid container spacing={2}>
             {exps.map((item) => (
               <Grid key={item.value} item xs={12} md={4}>
@@ -216,7 +219,7 @@ const HomeHero: FC = () => {
               </Grid>
             ))}
           </Grid>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   )
