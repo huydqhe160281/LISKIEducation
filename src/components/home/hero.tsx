@@ -52,7 +52,7 @@ const HomeHero: FC = () => {
     <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}>
       <Container maxWidth="lg">
         <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
                 textAlign: { xs: 'center', md: 'left' },
@@ -159,9 +159,8 @@ const HomeHero: FC = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={5} sx={{ position: 'relative' }}>
-            {/* Sertificate badge */}
-            <Box
+          <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
+            {/* <Box
               sx={{
                 position: 'absolute',
                 bottom: 30,
@@ -203,7 +202,7 @@ const HomeHero: FC = () => {
                   There are certificates for all courses.
                 </Typography>
               </Box>
-            </Box>
+            </Box> */}
             <Box sx={{ lineHeight: 0 }}>
               <Image src="/images/home-hero.jpg" width={1200} height={1200} alt="Hero img" />
             </Box>
