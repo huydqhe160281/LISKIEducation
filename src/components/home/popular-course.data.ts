@@ -16,8 +16,8 @@ export const data: Array<Course> = [
 **Lập kế hoạch tài chính**: Hướng dẫn trẻ cách lập kế hoạch tài chính cá nhân cho cả ngắn và dài hạn.
 `,
     rating: 5,
-    ratingCount: 8,
-    price: "2.000.000",
+    ratingCount: 0,
+    price: "1.499.000",
     category: "Beginner",
   },
   {
@@ -35,8 +35,8 @@ export const data: Array<Course> = [
 **Kỹ năng sơ cứu**: Cung cấp kiến thức cơ bản về xử lý vết thương và các phản ứng cấp cứu trong trường hợp khẩn cấp.
   `,
     rating: 5,
-    ratingCount: 15,
-    price: "2.500.000",
+    ratingCount: 6,
+    price: "1.999.000",
     category: "Intermediate",
   },
   {
@@ -55,8 +55,8 @@ export const data: Array<Course> = [
 **Khả năng sáng tạo**: Khuyến khích trẻ phát triển tư duy sáng tạo, tìm ra những giải pháp mới và độc đáo cho các vấn đề.
     `,
     rating: 4,
-    ratingCount: 7,
-    price: "2.000.000",
+    ratingCount: 5,
+    price: "1.499.000",
     category: "Beginner",
   },
   {
@@ -72,9 +72,9 @@ export const data: Array<Course> = [
 **Tổ Chức Công Việc**: Hướng dẫn trẻ cách tạo môi trường học tập gọn gàng, sắp xếp đồ dùng và tài liệu theo trình tự hợp lý.
 **Tạo Động Lực và Duy Trì Thói Quen Tốt**: Giúp trẻ tự động viên bản thân và hình thành thói quen tốt trong học tập và vui chơi.
       `,
-    rating: 4,
-    ratingCount: 12,
-    price: "2.000.000",
+    rating: 5,
+    ratingCount: 0,
+    price: "1.499.000",
     category: "Intermediate",
   },
   {
@@ -90,9 +90,9 @@ export const data: Array<Course> = [
 **Kiểm soát cảm xúc và ứng phó với hệ lụy**: Trẻ học cách kiểm soát cảm xúc tiêu cực như sợ hãi, lo lắng và tức giận trong các tình huống căng thẳng.
 **Xử lý tình huống**: Trang bị cho trẻ kỹ năng tự bảo vệ mình, tìm sự giúp đỡ từ người lớn, và hỗ trợ bạn bè khi gặp vấn đề liên quan đến bạo lực.
     `,
-    rating: 4,
-    ratingCount: 32,
-    price: "2.000.000",
+    rating: 5,
+    ratingCount: 7,
+    price: "1.999.000",
     category: "Intermediate",
   },
 ];
